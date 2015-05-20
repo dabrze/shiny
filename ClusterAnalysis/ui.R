@@ -9,7 +9,7 @@ shinyUI(fluidPage(
   sidebarLayout(
     sidebarPanel(
         selectInput("dataset", "Dataset", c("Iris", "Titanic", "Seatbelts", "UCB Admissions")),
-        selectInput("distFunc", "Distance function", c("euclidean", "maximum", "manhattan", "canberra", "binary", "minkowski")),
+        selectInput("distFunc", "Distance function", c("euclidean", "maximum", "manhattan", "minkowski")),
         selectInput("clustFunc", "Agglomeration method", c("average", "ward.D", "ward.D2", "single", "complete", "mcquitty", "median", "centroid")),
         checkboxInput("usePCA", "Use PCA before clustering", TRUE),
         checkboxInput("useLastAttrAsLabel", "Show class label legend", TRUE),
